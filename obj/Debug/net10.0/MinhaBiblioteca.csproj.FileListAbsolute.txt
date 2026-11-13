@@ -33,3 +33,4 @@ C:\Users\Unigran\Documents\poo\GerenciamentoBiblioteca\MinhaBiblioteca\obj\Debug
 C:\Users\Unigran\Documents\poo\GerenciamentoBiblioteca\MinhaBiblioteca\obj\Debug\net10.0\MinhaBiblioteca.pdb
 C:\Users\Unigran\Documents\poo\GerenciamentoBiblioteca\MinhaBiblioteca\obj\Debug\net10.0\MinhaBiblioteca.genruntimeconfig.cache
 C:\Users\Unigran\Documents\poo\GerenciamentoBiblioteca\MinhaBiblioteca\obj\Debug\net10.0\ref\MinhaBiblioteca.dll
+C:\Users\Unigran\Documents\poo\GerenciamentoBiblioteca\MinhaBiblioteca\obj\Debug\net10.0\MinhaBiblioteca.sourcelink.json

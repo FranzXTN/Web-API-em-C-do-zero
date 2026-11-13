@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 [Route("api/[controller]")]
 
 public class MateriaisController : ControllerBase
-{
+{ 
     private IMaterialRepository _materiais;
     public MateriaisController (MaterialRepository material)
     {
@@ -14,7 +14,7 @@ public class MateriaisController : ControllerBase
     [HttpGet]
     public IActionResult Get()
     {
-        return Ok(_materiais.Values);
+        return Ok(_materiais.Values());
     }
 
 }

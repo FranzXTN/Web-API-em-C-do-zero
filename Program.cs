@@ -6,6 +6,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddSingleton<IMaterialRepository, MaterialRepository>();
+
+
 builder.Services.AddControllers();
 
 var app = builder.Build();
