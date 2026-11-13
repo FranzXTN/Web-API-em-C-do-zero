@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "F5Hp0/f3lg0=",
+  "dgSpecHash": "toBUOnVmZqk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Unigran\\Documents\\poo\\GerenciamentoBiblioteca\\MinhaBiblioteca\\MinhaBiblioteca.csproj",
+  "projectFilePath": "C:\\Users\\Unigran\\Desktop\\att do nata\\Web-API-em-C-do-zero\\MinhaBiblioteca.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Unigran\\.nuget\\packages\\microsoft.extensions.apidescription.server\\10.0.0\\microsoft.extensions.apidescription.server.10.0.0.nupkg.sha512",
     "C:\\Users\\Unigran\\.nuget\\packages\\microsoft.openapi\\2.7.5\\microsoft.openapi.2.7.5.nupkg.sha512",
