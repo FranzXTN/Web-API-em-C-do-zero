@@ -3,23 +3,23 @@ public class MaterialRepository : IMaterialRepository
     private Dictionary<int, MaterialBiblioteca> _materiais = new Dictionary<int, MaterialBiblioteca>()
     {
         {1, new Livro {Id = 1, titulo = "Assim falou Zaratustra", anoPublicacao = 1883, autor = "Friedrich Nietzche", paginas = 400}},
-        {2, new Revista {Id = 2, titulo = "Recreio", anoPublicacao = 2010, Edicao = "Número 7", mesPublicacao = "Novembro"}},
+        {2, new Revista {Id = 2, titulo = "Recreio", anoPublicacao = 2010, Edicao = 7, mesPublicacao = 11}},
     };
 
-    private int GerarNovoId()
-{
-    if (_materiais.Count == 0)
-        return 1;
+    private int _ultimoId = 2;
 
-    return _materiais.Keys.Max() + 1;
-}
+    private int GerarNovoId()
+    {
+        _ultimoId = Math.Max(_ultimoId, _materiais.Count == 0 ? 0 : _materiais.Keys.Max()) + 1;
+        return _ultimoId;
+    }
 
     public IEnumerable<MaterialBiblioteca> ObterTodos()
     {
         return _materiais.Values;
     }
 
-      public MaterialBiblioteca? ObterPorId (int id)
+    public MaterialBiblioteca? ObterPorId(int id)
     {
         if (!_materiais.ContainsKey(id))
         {
@@ -28,34 +28,27 @@ public class MaterialRepository : IMaterialRepository
         return _materiais[id];
     }
 
-    public bool Adicionar(MaterialBiblioteca material)
+    public MaterialBiblioteca Adicionar(MaterialBiblioteca material)
     {
-        int novoId = GerarNovoId();
-
-        _materiais.Add(novoId, material );
-
-        return true;
+        material.Id = GerarNovoId();
+        _materiais.Add(material.Id, material);
+        return material;
     }
 
-        public bool Atualizar (int id, MaterialBiblioteca material)
-   {
+    public bool Atualizar(int id, MaterialBiblioteca material)
+    {
         if (!_materiais.ContainsKey(id))
         {
             return false;
         }
-        
-        _materiais.Add(id, material);
+
+        material.Id = id; // o ID da URL prevalece
+        _materiais[id] = material;
         return true;
     }
 
-        public bool Remover(int id)
-   {
-        if (!_materiais.ContainsKey(id))
-        {
-            return false;
-        }
-        _materiais.Remove(id);
-        return true;
+    public bool Remover(int id)
+    {
+        return _materiais.Remove(id);
     }
-
 }

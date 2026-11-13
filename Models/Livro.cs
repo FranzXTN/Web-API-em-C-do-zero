@@ -1,8 +1,7 @@
 public class Livro : MaterialBiblioteca, IEmprestimo
 {
-    public string? autor {get; set;}
-    public int paginas {get; set;}
-    public int prazoDias {get;set;}
+    public string? autor { get; set; }
+    public int paginas { get; set; }
 
     public override int CalcularPrazo()
     {
@@ -11,12 +10,11 @@ public class Livro : MaterialBiblioteca, IEmprestimo
 
     public override string Descricao()
     {
-        return $"Livro: {titulo}";
+        return $"Livro: {titulo} - Autor: {autor}";
     }
 
-    public double Emprestimo(double novoEmprestimo)
+    public string Emprestar()
     {
-        this.prazoDias = CalcularPrazo();
-        return novoEmprestimo;
+        return $"O livro '{titulo}' pode ser emprestado por {CalcularPrazo()} dias.";
     }
 }

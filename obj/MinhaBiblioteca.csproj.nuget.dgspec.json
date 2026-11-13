@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Unigran\\Desktop\\att do nata\\Web-API-em-C-do-zero\\MinhaBiblioteca.csproj": {}
+    "C:\\Users\\User\\Documents\\Faculdade\\POO\\C#\\Web-API-em-C-do-zero\\MinhaBiblioteca.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Unigran\\Desktop\\att do nata\\Web-API-em-C-do-zero\\MinhaBiblioteca.csproj": {
+    "C:\\Users\\User\\Documents\\Faculdade\\POO\\C#\\Web-API-em-C-do-zero\\MinhaBiblioteca.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Unigran\\Desktop\\att do nata\\Web-API-em-C-do-zero\\MinhaBiblioteca.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Documents\\Faculdade\\POO\\C#\\Web-API-em-C-do-zero\\MinhaBiblioteca.csproj",
         "projectName": "MinhaBiblioteca",
-        "projectPath": "C:\\Users\\Unigran\\Desktop\\att do nata\\Web-API-em-C-do-zero\\MinhaBiblioteca.csproj",
-        "packagesPath": "C:\\Users\\Unigran\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Unigran\\Desktop\\att do nata\\Web-API-em-C-do-zero\\obj\\",
+        "projectPath": "C:\\Users\\User\\Documents\\Faculdade\\POO\\C#\\Web-API-em-C-do-zero\\MinhaBiblioteca.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Documents\\Faculdade\\POO\\C#\\Web-API-em-C-do-zero\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Unigran\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -24,6 +24,7 @@
         },
         "frameworks": {
           "net10.0": {
+            "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {}
           }
@@ -38,15 +39,16 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.400"
       },
       "frameworks": {
         "net10.0": {
+          "framework": "net10.0",
           "targetAlias": "net10.0",
           "dependencies": {
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[10.3.1, )"
+              "version": "[11.0.1, )"
             }
           },
           "imports": [
@@ -68,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",

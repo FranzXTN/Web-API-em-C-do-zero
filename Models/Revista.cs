@@ -1,16 +1,15 @@
 public class Revista : MaterialBiblioteca
 {
-    public string? Edicao {get; set;}
-    public string? mesPublicacao {get; set;}
+    public int Edicao { get; set; }
+    public int mesPublicacao { get; set; }
 
-        public override int CalcularPrazo()
+    public override int CalcularPrazo()
     {
         return 7;
     }
 
-        public override string Descricao()
+    public override string Descricao()
     {
-        return $"Revista: {titulo}";
+        return $"Revista: {titulo} - Edição: {Edicao}";
     }
-
 }

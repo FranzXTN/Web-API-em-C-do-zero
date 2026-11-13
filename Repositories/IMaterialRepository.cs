@@ -1,13 +1,12 @@
 public interface IMaterialRepository
 {
-    
-IEnumerable<MaterialBiblioteca> ObterTodos();
+    IEnumerable<MaterialBiblioteca> ObterTodos();
 
-MaterialBiblioteca? ObterPorId(int id);
+    MaterialBiblioteca? ObterPorId(int id);
 
-bool Adicionar(MaterialBiblioteca material);
+    MaterialBiblioteca Adicionar(MaterialBiblioteca material);
 
-bool Atualizar(int id, MaterialBiblioteca material);
+    bool Atualizar(int id, MaterialBiblioteca material);
 
-bool Remover(int id);
+    bool Remover(int id);
 }
