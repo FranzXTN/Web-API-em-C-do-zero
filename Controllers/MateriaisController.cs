@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 public class MateriaisController : ControllerBase
 { 
     private IMaterialRepository _materiais;
-    public MateriaisController (MaterialRepository material)
+    public MateriaisController (IMaterialRepository material)
     {
         _materiais = material;
     }
@@ -14,7 +14,17 @@ public class MateriaisController : ControllerBase
     [HttpGet]
     public IActionResult Get()
     {
-        return Ok(_materiais.Values());
+        return Ok(_materiais.ObterTodos());
     }
 
+  [HttpGet("{id}")]
+    public IActionResult GetbyId(int id)
+    {
+        var material = _materiais.ObterPorId(id);
+        {   
+            if (material == null)
+            return NotFound("Aluno Não encontrado");
+        }
+        return Ok(material);
+    }
 }
