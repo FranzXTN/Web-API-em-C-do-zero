@@ -1,26 +1,20 @@
-/* Ajustes simples por cima do Bootstrap */
-
 .card-resumo {
   border-width: 2px;
 }
 
-/* Evita que títulos ou autores muito longos estourem o card em telas pequenas */
 .card-material .card-title,
 .card-material .card-text {
   overflow-wrap: anywhere;
 }
 
-/* Botões de ação com espaço suficiente para toque no celular */
 .acoes-material .btn {
   min-height: 38px;
 }
 
-/* Garante que as mensagens não fiquem coladas no resumo */
 #mensagens .alert {
   margin-bottom: 1rem;
 }
 
-/* Foco visível para navegação por teclado */
 .btn:focus-visible,
 .form-control:focus-visible,
 .form-select:focus-visible {

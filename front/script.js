@@ -7,7 +7,6 @@ const MESES = [
   "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro",
 ];
 
-// Lista que fica guardada na memória depois do GET
 let materiais = [];
 
 // ---------- Seleção dos elementos ----------
@@ -67,7 +66,7 @@ function mostrarMensagem(texto, tipo) {
 
   areaMensagens.prepend(alerta);
 
-  // Some sozinha depois de alguns segundos
+
   setTimeout(function () {
     alerta.remove();
   }, 8000);
@@ -89,7 +88,6 @@ function lerErro(resposta) {
   });
 }
 
-// Faz o fetch e já confere resposta.ok. Se algo der errado, lança um Error com mensagem amigável.
 function requisitar(url, opcoes) {
   return fetch(url, opcoes)
     .catch(function () {
